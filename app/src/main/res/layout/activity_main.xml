@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e3e3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="contentDescription">
+
+    <FrameLayout
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/topSpace"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e2e3e3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/bottomSpace"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#e2e3e3"
+        app:layout_constraintTop_toBottomOf="@id/topSpace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomSpace"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <include
+        android:id="@+id/include_main_view"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view4"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main" />
+
+    <include
+        android:id="@+id/include_main_view2"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view5"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view3"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main" />
+
+    <include
+        android:id="@+id/include_main_view3"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view2"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main" />
+
+    <include
+        android:id="@+id/include_main_view4"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view7"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view" />
+
+    <include
+        android:id="@+id/include_main_view5"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view8"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view6"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view4"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view2" />
+
+    <include
+        android:id="@+id/include_main_view6"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view5"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view3" />
+
+    <include
+        android:id="@+id/include_main_view7"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view10"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view4" />
+
+    <include
+        android:id="@+id/include_main_view8"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view11"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view9"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view7"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view5" />
+
+    <include
+        android:id="@+id/include_main_view9"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view8"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view6" />
+
+    <include
+        android:id="@+id/include_main_view10"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view13"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view7" />
+
+    <include
+        android:id="@+id/include_main_view11"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view14"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view12"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view10"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view8" />
+
+    <include
+        android:id="@+id/include_main_view12"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include_main_view15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view11"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view9" />
+
+    <include
+        android:id="@+id/include_main_view13"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view10" />
+
+    <include
+        android:id="@+id/include_main_view14"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/include_main_view15"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view13"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view11" />
+
+    <include
+        android:id="@+id/include_main_view15"
+        layout="@layout/main_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/include_main_view14"
+        app:layout_constraintTop_toBottomOf="@+id/include_main_view12" />
+
+    <jp.chikaharu11.instant_drumpad_tr808.CSpinner
+        android:id="@+id/menu_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        app:layout_constraintVertical_weight="4" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_spinner"
+        app:layout_constraintVertical_weight="1" />
+
+    <GridView
+        android:id="@+id/grid_view_choose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:background="#5A5A66"
+        android:numColumns="1"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@id/space2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        app:layout_constraintHorizontal_weight="2"/>
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#5A5A66"
+        android:numColumns="1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/grid_view_choose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#5A5A66"
+        android:numColumns="1"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@id/space3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#5A5A66"
+        android:numColumns="1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/grid_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:divider="@null"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/space5"
+        app:layout_constraintStart_toEndOf="@id/space4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        app:layout_constraintHorizontal_weight="5" />
+
+    <Space
+        android:id="@+id/space4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#5A5A66"
+        android:numColumns="1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/list_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <Space
+        android:id="@+id/space5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#5A5A66"
+        android:numColumns="1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/list_view"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <jp.chikaharu11.instant_drumpad_tr808.TuningView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_main"
+        tools:ignore="MissingConstraints">
+
+        <Space
+            android:id="@+id/snack_space"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

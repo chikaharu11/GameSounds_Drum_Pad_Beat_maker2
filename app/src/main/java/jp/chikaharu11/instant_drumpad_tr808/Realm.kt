@@ -1,0 +1,57 @@
+package jp.chikaharu11.instant_drumpad_tr808
+
+import io.realm.RealmObject
+import io.realm.annotations.PrimaryKey
+import io.realm.annotations.Required
+
+open class SaveSlot(
+    @PrimaryKey var id: String = "",
+    @Required
+    var pad: String = "",
+    var pad2: String = "",
+    var pad3: String = "",
+    var pad4: String = "",
+    var pad5: String = "",
+    var pad6: String = "",
+    var pad7: String = "",
+    var pad8: String = "",
+    var pad9: String = "",
+    var pad10: String = "",
+    var pad11: String = "",
+    var pad12: String = "",
+    var pad13: String = "",
+    var pad14: String = "",
+    var pad15: String = "",
+    var volume: Float = 0f,
+    var volume2: Float = 0f,
+    var volume3: Float = 0f,
+    var volume4: Float = 0f,
+    var volume5: Float = 0f,
+    var volume6: Float = 0f,
+    var volume7: Float = 0f,
+    var volume8: Float = 0f,
+    var volume9: Float = 0f,
+    var volume10: Float = 0f,
+    var volume11: Float = 0f,
+    var volume12: Float = 0f,
+    var volume13: Float = 0f,
+    var volume14: Float = 0f,
+    var volume15: Float = 0f,
+    var tempo: Float = 0f,
+    var tempo2: Float = 0f,
+    var tempo3: Float = 0f,
+    var tempo4: Float = 0f,
+    var tempo5: Float = 0f,
+    var tempo6: Float = 0f,
+    var tempo7: Float = 0f,
+    var tempo8: Float = 0f,
+    var tempo9: Float = 0f,
+    var tempo10: Float = 0f,
+    var tempo11: Float = 0f,
+    var tempo12: Float = 0f,
+    var tempo13: Float = 0f,
+    var tempo14: Float = 0f,
+    var tempo15: Float = 0f,
+    var check : Int = 0,
+    var c_check : Int = 0
+) : RealmObject()
