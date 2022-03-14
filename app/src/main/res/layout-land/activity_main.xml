@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e2e3e3"
+    android:background="#ffffff"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity"
@@ -23,7 +23,7 @@
         android:id="@+id/topSpace"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#e2e3e3"
+        android:background="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/adView"
@@ -33,7 +33,7 @@
         android:id="@+id/bottomSpace"
         android:layout_width="match_parent"
         android:layout_height="16dp"
-        android:background="#e2e3e3"
+        android:background="#ffffff"
         app:layout_constraintTop_toBottomOf="@id/topSpace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -220,15 +220,16 @@
     <GridView
         android:id="@+id/grid_view_choose"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginEnd="48dp"
         android:background="#5A5A66"
         android:numColumns="1"
         android:visibility="invisible"
-        app:layout_constraintTop_toBottomOf= "@+id/toolbar_main"
-        app:layout_constraintStart_toEndOf="@id/space2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="2" />
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/space2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_main" />
 
     <Space
         android:id="@+id/space2"

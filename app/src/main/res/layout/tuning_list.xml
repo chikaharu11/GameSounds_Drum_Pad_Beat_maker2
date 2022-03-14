@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5A5A66"
+    android:background="#5E6572"
     tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck">
 
     <TextView
@@ -38,7 +38,7 @@
         android:background="#e2e3e3"
         android:clickable="true"
         android:text="@string/textView18o"
-        android:textColor="#FFFFFF"
+        android:textColor="#2b2b2b"
         app:layout_constraintBottom_toTopOf="@+id/loop"
         app:layout_constraintEnd_toEndOf="@id/loop"
         app:layout_constraintTop_toTopOf="parent" />

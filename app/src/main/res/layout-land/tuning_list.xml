@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5A5A66"
+    android:background="#5E6572"
     tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck">
 
     <TextView
@@ -41,7 +41,7 @@
         android:background="#e2e3e3"
         android:gravity="center"
         android:text="@string/textView18"
-        android:textColor="#FFFFFF"
+        android:textColor="#2b2b2b"
         android:textSize="11sp"
         android:layout_marginBottom="8dp"
         android:clickable="true"
