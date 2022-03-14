@@ -55,19 +55,11 @@
     <string name="Loaded">Loading… Please wait.</string>
 
     <string-array name="spinnerItems">
-        <item>BASS DRUM [BD]</item>
-        <item>HAND CLAP [CP]</item>
-        <item>CLAVES [CL]</item>
-        <item>CLSD HI HAT [CH]</item>
-        <item>CONGA [HC-MC-LC]</item>
-        <item>COWBELL [CB]</item>
-        <item>CYMBAL [CY]</item>
-        <item>MARACAS [MA]</item>
-        <item>OPEN HI HAT [OH]</item>
-        <item>RIMSHOT [RS]</item>
-        <item>SNARE DRUM [SD]</item>
-        <item>TOM [LT-MT-HT]</item>
-        <item>Sample Loops</item>
+        <item>FX</item>
+        <item>8bit [ Beats ]</item>
+        <item>8bit [ Loops ]</item>
+        <item>GB DS [ Beats ]</item>
+        <item>GB [ Loops ]</item>
         <item>Internal sounds</item>
         <item>External sounds</item>
     </string-array>

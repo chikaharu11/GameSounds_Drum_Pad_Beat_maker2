@@ -1,4 +1,4 @@
-package jp.chikaharu11.instant_drumpad_tr808
+package jp.chikaharu11.instant_drumpad_retro_video_game
 
 import android.widget.PopupWindow
 import android.widget.Spinner

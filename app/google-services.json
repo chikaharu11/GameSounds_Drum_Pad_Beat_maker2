@@ -1,39 +1,39 @@
 {
   "project_info": {
-    "project_number": "937548219984",
-    "project_id": "chikaharu11-admob",
-    "storage_bucket": "chikaharu11-admob.appspot.com"
+    "project_number": "627427327104",
+    "project_id": "chikaharu11-admob4",
+    "storage_bucket": "chikaharu11-admob4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:937548219984:android:2118f25ac0bc5fb12db355",
+        "mobilesdk_app_id": "1:627427327104:android:0b809c17bf3724e1583a65",
         "android_client_info": {
-          "package_name": "jp.chikaharu11.instant_drumpad_tr808"
+          "package_name": "jp.chikaharu11.instant_drumpad_retro_video_game"
         }
       },
       "oauth_client": [
         {
-          "client_id": "937548219984-enq1ti8i6fa78h1sfs9b4ii9m084c2qf.apps.googleusercontent.com",
+          "client_id": "627427327104-5u4229hnkjeunpq26bkao50tbr5uq9as.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD89yI_RmK4wEH5BXPXY6VenQayb8FZuUU"
+          "current_key": "AIzaSyBah7BvsLOK7PVTBNpS1nJL25XdfANQsKE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "937548219984-enq1ti8i6fa78h1sfs9b4ii9m084c2qf.apps.googleusercontent.com",
+              "client_id": "627427327104-5u4229hnkjeunpq26bkao50tbr5uq9as.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
         }
       },
-      "admob_app_id": "ca-app-pub-6154074228513535~9091076058"
+      "admob_app_id": "ca-app-pub-6154074228513535~1805418293"
     }
   ],
   "configuration_version": "1"
