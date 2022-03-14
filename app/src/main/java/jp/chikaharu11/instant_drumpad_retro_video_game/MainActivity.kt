@@ -488,7 +488,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 }
                 "Change to Play Mode" -> {
                     paste = 0
-                    binding.toolbarMain.setBackgroundColor(Color.parseColor("#5A5A66"))
+                    binding.toolbarMain.setBackgroundColor(Color.parseColor("#5E6572"))
                     Toast.makeText(applicationContext, R.string.change2, Toast.LENGTH_LONG).show()
                     gridView.visibility = View.INVISIBLE
                     gridView.adapter = adapter
