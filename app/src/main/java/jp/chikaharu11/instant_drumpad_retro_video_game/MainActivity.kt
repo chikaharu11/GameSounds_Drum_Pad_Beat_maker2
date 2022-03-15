@@ -71,12 +71,12 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
     private var padText7 = "fx42"
     private var padText8 = "fx47"
     private var padText9 = "fx56"
-    private var padText10 = "g8bit_beat12_90bpm"
-    private var padText11 = "g8bit_beat15_90bpm"
-    private var padText12 = "gb_loop37_90bpm"
-    private var padText13 = "ds_loop02_120bpm"
-    private var padText14 = "gb_beat01_120bpm"
-    private var padText15 = "g8bit_beat05_120bpm"
+    private var padText10 = "fx15"
+    private var padText11 = "fx30"
+    private var padText12 = "fx12"
+    private var padText13 = "fx21"
+    private var padText14 = "fx58"
+    private var padText15 = "fx13"
 
     private var count = 0.5f
     private var bpm = 1.0f
@@ -1982,7 +1982,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 findViewById<Button>(R.id.loop).text = ""
                 if (orientation == Configuration.ORIENTATION_PORTRAIT) {
                     count = "%.1f".format(count).toFloat()
-                    findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + " " + actionTitle + " " + bpm.toString().replace("f", "").uppercase()
+                    findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + " " + actionTitle.uppercase() + " " + bpm.toString().replace("f", "").uppercase()
                 } else if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
                     count = "%.1f".format(count).toFloat()
                     findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + "\n\n" + "loop" + "\n\n" + bpm.toString().replace("f", "").uppercase()
@@ -2001,7 +2001,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 findViewById<Button>(R.id.loop).text = ""
                 if (orientation == Configuration.ORIENTATION_PORTRAIT) {
                     count = "%.1f".format(count).toFloat()
-                    findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + " " + actionTitle + " " + bpm.toString().replace("f", "").uppercase()
+                    findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + " " + actionTitle.uppercase() + " " + bpm.toString().replace("f", "").uppercase()
                 } else if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
                     count = "%.1f".format(count).toFloat()
                     findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + "\n\n" + "loop" + "\n\n" + bpm.toString().replace("f", "").uppercase()
@@ -2020,7 +2020,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 findViewById<Button>(R.id.loop).text = ""
                 if (orientation == Configuration.ORIENTATION_PORTRAIT) {
                     bpm = "%.1f".format(bpm).toFloat()
-                    findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + " " + actionTitle + " " + bpm.toString().replace("f", "").uppercase()
+                    findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + " " + actionTitle.uppercase() + " " + bpm.toString().replace("f", "").uppercase()
                 } else if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
                     bpm = "%.1f".format(bpm).toFloat()
                     findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + "\n\n" + "loop" + "\n\n" + bpm.toString().replace("f", "").uppercase()
@@ -2042,7 +2042,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 findViewById<Button>(R.id.loop).text = ""
                 if (orientation == Configuration.ORIENTATION_PORTRAIT) {
                     bpm = "%.1f".format(bpm).toFloat()
-                    findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + " " + actionTitle + " " + bpm.toString().replace("f", "").uppercase()
+                    findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + " " + actionTitle.uppercase() + " " + bpm.toString().replace("f", "").uppercase()
                 } else if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
                     bpm = "%.1f".format(bpm).toFloat()
                     findViewById<TextView>(R.id.padText0).text = count.toString().replace("f", "") + "\n\n" + "loop" + "\n\n" + bpm.toString().replace("f", "").uppercase()
